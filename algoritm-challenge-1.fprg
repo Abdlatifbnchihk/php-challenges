@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="algoritm-challenge-1"/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-06 01:26:21 PM"/>
+        <attribute name="created" value="cGM7REVTS1RPUC1IUTBVRzZDOzIwMjYtMDMtMDY7MTE6MDk6MzQgQU07MjUzOA=="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC1IUTBVRzZDOzIwMjYtMDMtMDY7MDE6MjY6MjEgUE07MTsyNjU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, orders, totalPrice" type="Integer" array="False" size=""/>
+            <declare name="isStudent" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter youre price&quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;Enter your order&quot;" newline="True"/>
+            <input variable="orders"/>
+            <output expression="&quot;Are you steudent or not ?&quot;" newline="True"/>
+            <input variable="isStudent"/>
+            <if expression="isStudent == true &amp;&amp; orders &gt; 5">
+                <then>
+                    <assign variable="totalPrice" expression="(price * orders) * (0.8) - orders"/>
+                </then>
+                <else>
+                    <if expression="isStudent == true &amp;&amp; orders &lt; 5">
+                        <then>
+                            <assign variable="totalPrice" expression="(price * orders) * (0.8)"/>
+                        </then>
+                        <else>
+                            <if expression="isStudent == false &amp;&amp; orders &gt; 5">
+                                <then>
+                                    <assign variable="totalPrice" expression="(price * orders) - orders"/>
+                                </then>
+                                <else>
+                                    <assign variable="totalPrice" expression="(price * orders)"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;The total price is: &quot; &amp; totalPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
