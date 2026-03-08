@@ -16,5 +16,4 @@ else if ($age > 60) {
 else {
     echo "the price is 60 DH";
 }
-
 ?>
