@@ -1,59 +1,67 @@
 <?php
-
-$counter1 = 0;
-
 echo "The task 01" . "</br>";
-while($counter1 < 10) {
-    $counter1 += 1;
-    echo $counter1 . "</br>";
+function greetUser($name){
+    echo "Hello" . "\n" . $name . "</br>";
 }
 
+// call the greetUser function
+greetUser("Abdellatif");
 
-echo "The task 02" . "<br>";
+echo "The task 02" . "</br>";
 
-for($i = 10; $i >= 1; $i--){
-    echo $i . "<br>";
-};
-
-
-echo "The task 03" . "<br>";
-
-$counter2 = 0;
-
-while($counter2 < 20) {
-    $counter2 = $counter2 + 2;
-    echo $counter2 . "</br>";
+function calculateArea($width, $height){
+    return $width * $height;
 }
 
+$totalArea = calculateArea(10, 5);
 
-echo "The task 04" . "<br>";
+echo "The total area is" . "\n" . $totalArea . "\n" . "square units." . "</br>";
 
-$counter3 = 0;
-for($e = 1; $e <= 50; $e++){
-    if($e % 2 == 0) {
-        $counter3++;
+
+echo "The task 03" . "</br>";
+
+function isAdult($age){
+    if($age >= 18) {
+        return true;
+    } else {
+        return false;
     }
-    // echo $e . "<br>";
-}
-echo "The total of even numbers is : " . "\n" . $counter3 . "</br>";
-
-echo "The task 05" . "<br>";
-for($a = 1; $a <= 10; $a++) {
-    echo "*";
 }
 
+if(isAdult(18)) {
+    echo "You are valid". "</br>";
+} else {
+    echo "You are not valide". "</br>";
+}
 
-echo "The task 06" . "<br>";
-// $counter4 = 0;
+echo "The task 04" . "</br>";
 
-for ($i = 1; $i <= 5; $i++) {
-
-    for ($j = 1; $j <= $i; $j++) {
-        echo "*";
+function multiplyNumbers($a, $b){
+    if(is_numeric($a) && is_numeric($b)){
+        return $a * $b;
+    } else {
+        echo "Error: Invalid Input." . "</br>";
     }
-    echo "<br>";
 }
 
+$result1 = multiplyNumbers(5, 10);
+$result2 = multiplyNumbers(5, "apple");
+
+echo $result1 . "</br>";
+echo $result2;
+
+
+echo "The task 05" . "</br>";
+function manualReverse($text){
+    $reversed = "";
+    for ($i = strlen($text) - 1; $i >= 0; $i--) {
+        $reversed .= $text[$i] . "</br>";
+    }
+
+    echo "the length is: " . $reversed . "\n";
+}
+
+manualReverse("abdellatif");
 
 
 
