@@ -33,13 +33,13 @@ for($e = 1; $e <= 50; $e++){
     if($e % 2 == 0) {
         $counter3++;
     }
-    echo $e . "<br>";
+    // echo $e . "<br>";
 }
 echo "The total of even numbers is : " . "\n" . $counter3 . "</br>";
 
 echo "The task 05" . "<br>";
 for($a = 1; $a <= 10; $a++) {
-    echo "*" . "<br>";
+    echo "*";
 }
 
 
@@ -51,7 +51,6 @@ for ($i = 1; $i <= 5; $i++) {
     for ($j = 1; $j <= $i; $j++) {
         echo "*";
     }
-
     echo "<br>";
 }
 
