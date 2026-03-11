@@ -1,30 +1,26 @@
 <?php
 
-$names = ["ali", "tarik", "khalid"];
-// add item to array first way
-$names[] = "hassan";
+// indexd array
+// $seating_list = [
+//     ["A1", "A2", "A3"],
+//     ["B1", "B2", "-"],
+//     ["C1", "-", "C3"],
+// ];
 
-// add item to array second way push it add the new item to end of array
-array_push($names, "abdo", "ahmed");
+// for($row = 0; $row < count($seating_list); $row++) {
+//     echo "the row" . $row . "</br>";
+//     for($s = 0; $s < count($seating_list[$row]); $s++) {
+//         print_r($seating_list[$row][$s]) . "</br>";
+//         $seat_per_row = $seating_list[$row][$s];
+//         if($seat_per_row == "-") {
+//             $seat_per_row = "X";
+//         }
+//         echo($seat_per_row) . "\t";
+//     }
+//     echo "\n";
+// }
 
-$length = count($names);
-
-$check = in_array("abdo", $names);
-
-echo $check . "</br>";
-
-for($name = 0; $name < $length; $name++) {
-    echo $names[$name] . "</br>";
-}
-
-
-$tttt1 = ["hello"];
-$tttt2 = ["good"];
-
-$totle = array_merge($tttt1, $tttt2);
-
-print_r($totle);
-
+// assocaitive arrays
 
 
 
