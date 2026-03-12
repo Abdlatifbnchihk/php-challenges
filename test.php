@@ -20,9 +20,13 @@
 //     echo "\n";
 // }
 
-// assocaitive arrays
+$name = "abde llatif";
 
 
+$names = explode(" " , $name);
+
+
+print_r($names);
 
 
 ?>
