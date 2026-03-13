@@ -31,7 +31,6 @@
             exit;
         } else {
             $emailMessage = "Pleace Enter the right email";
-
         }
 
     } 
