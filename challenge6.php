@@ -27,9 +27,6 @@ if($category){
     });
 };
 
-foreach($products as $product){
-
-}
 
 if($sort == "asc") {
     // echo $sort . "</br>";
